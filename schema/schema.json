@@ -1,0 +1,50 @@
+{
+  "users": {
+    "id": "uuid",
+    "email": "varchar",
+    "name": "varchar",
+    "password_hash": "varchar",
+    "created_at": "timestamp",
+    "updated_at": "timestamp"
+  },
+  "events": {
+    "id": "uuid",
+    "user_id": "uuid",
+    "title": "varchar",
+    "description": "text",
+    "start_time": "timestamp",
+    "end_time": "timestamp",
+    "recurrence_rule": "varchar",
+    "tags": "varchar[]",
+    "attachments": "varchar[]",
+    "created_at": "timestamp",
+    "updated_at": "timestamp",
+    "deleted_at": "timestamp"
+  },
+  "tasks": {
+    "id": "uuid",
+    "user_id": "uuid",
+    "event_id": "uuid",
+    "title": "varchar",
+    "description": "text",
+    "status": "varchar",
+    "due_date": "timestamp",
+    "tags": "varchar[]",
+    "attachments": "varchar[]",
+    "created_at": "timestamp",
+    "updated_at": "timestamp",
+    "deleted_at": "timestamp"
+  },
+  "notes": {
+    "id": "uuid",
+    "user_id": "uuid",
+    "event_id": "uuid",
+    "task_id": "uuid",
+    "content": "text",
+    "tags": "varchar[]",
+    "attachments": "varchar[]",
+    "created_at": "timestamp",
+    "updated_at": "timestamp",
+    "deleted_at": "timestamp"
+  }
+}
